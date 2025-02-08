@@ -22,7 +22,9 @@ public class RobotDrive extends SubsystemBase {
 
   private RelativeEncoder leftFrontEncoder;
   private RelativeEncoder rightFrontEncoder;
-
+  public void driveTank(double leftSpeed, double rightSpeed) {
+    drive.tankDrive(leftSpeed, rightSpeed);
+  }
   public RobotDrive() {
     SparkMaxConfig config = new SparkMaxConfig();
 
